@@ -1,0 +1,136 @@
+<html>
+  <head>
+  	<meta charset="UTF-8">
+  	<title>Curso Javascript</title>
+  </head>
+  <body>
+  	<div id = "app">
+  	  <button onmouseover ="mostraAlerta()">Me pressione</button>
+  	  <input onkeypress="mostraAlerta()" />
+  	</div>
+
+  	<script>
+  	  //var x = 10, y = 5;
+
+  	  //var resultado = x + y + 100;
+
+  	  //console.log(resultado);
+
+  	  /*function retornaSexo(sexo){
+  	  	
+  	  	if(sexo === 'M'){ //com === ele verifica alem do valor, o tipo também
+  	  		resultado = "Masculino";
+  	  	}else if(sexo === 'F'){
+			resultado = "Feminino";
+		}else{
+			resultado = 'Outro';
+  	  	}*/
+
+  	  	/*switch (sexo){
+  	  		case 'M':
+  	  			return 'Masculino';
+
+  	  		case 'F':
+  	  			return 'Feminino';
+
+  	  		default :
+  	  			return 'Outro';
+  	  	}//Fim switch
+
+  	  	//return resultado;
+  	  }/*///Fim funcao
+
+
+  	  //var retorno = (sexo === 'M') ? 'Masculino' : 'Feminino';
+
+  	  /*function exibeAlerta(){
+  	  	alert("COE TROXA");
+  	  }*///Fim funcao
+
+ 	  //setInterval(exibeAlerta, 3000); // A cada intervalo de tempo executa a funcao REPETIDAMENTE
+ 	  //setTimeout(exibeAlerta, 1000); //dps de um intervalo de tempo executa a funcao UMA UNICA VEZ
+
+ 	  var endereco = {
+ 	  	rua: "Rua dos pinheiros",
+ 	  	numero: 1293,
+ 	  	bairro: "Centro",
+ 	  	cidade: "São Paulo",
+ 	  	uf: "SP"
+ 	  };
+ 	  console.log("O usuario mora em " + endereco.cidade + " / " + endereco.uf + ", no bairro " + endereco.bairro + ", na rua '" + endereco.rua + "' com nº " + endereco.numero +".")
+
+ 	  /*function pares(x,y){
+ 	  	for(x; x <= y; x++){
+ 	  	  if(x % 2 == 0){
+ 	  	  	console.log(x);
+ 	  	  }
+ 	  	}//Fim for
+ 	  }//Fim function
+
+ 	  pares(32,321);*/
+
+ 	  /*function temHabilidade(skills){
+ 	  	var resultado = skills.indexOf("Javascript",0);
+ 	  	if(resultado >= 0){
+ 	  		resultado = true;
+ 	  	}else{
+ 	  		resultado = false;
+ 	  	}
+ 	  	return resultado;
+ 	  }
+
+ 	  var skills = ["Javascript", "ReactJS", "React Native"];
+ 	  var resultado = temHabilidade(skills);
+
+ 	  console.log(resultado);*/
+
+ 	  /*function experiencia(anos){
+ 	  	if(anos >= 0 && anos < 1){
+ 	  		return 'Iniciante';
+ 	  	}else if(anos >= 1 && anos < 3){
+ 	  		return 'Intermediario';
+ 	  	}
+ 	  	else if(anos >= 3 && anos <= 6){
+ 	  		return 'Avançado';
+ 	  	}else if(anos >= 7){
+ 	  		return 'Jedi Master';
+ 	  	}//Fim ifs encadeados
+ 	  }//Fim function
+
+ 	  var anosEstudo = 100;
+ 	  var resultado = experiencia(anosEstudo);
+
+ 	  console.log(resultado);*/
+
+ 	  var usuarios = [
+		 {
+		   nome: "Diego",
+		   habilidades: ["Javascript", "ReactJS", "Redux"]
+		 },
+		 {
+		   nome: "Gabriel",
+		   habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+		 }
+	  ];
+
+	  function exibir(usuarios){
+	  	var obj;
+	  	for(var value of usuarios){
+	  		obj = value;
+	  		console.log("O " + obj.nome + " possui as habilidades: " + obj.habilidades.join(', '));
+	  	}
+
+	  }
+
+	  exibir(usuarios);
+
+	  function mostraAlerta(){
+	  	alert('Botao foi clicado');
+	  }
+
+	  //setTimeout(alert("yan é gay"), 4000);
+	  //setInterval(alert("yan é gay"), 5000);
+
+  	</script>
+  </body>
+</html>
